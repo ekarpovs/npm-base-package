@@ -65,25 +65,34 @@ A npm base package for starting to make real packages for Node.js projects.
     Note: After the command is executed once, the Git hooks will run automatically before each commit and push.
 
 #### 2. Write the package code and tests.
-#### 3. [Sign up with npm](https://www.npmjs.com/signup).
-#### 4. Sign in with your npm account in the terminal:
+#### 3. Prepare to publish the package: 
+##### 3.1. [Sign up with npm](https://www.npmjs.com/signup).
+##### 3.2. Sign in with your npm account in the terminal:
     ```bash
     npm login 
     follow the on-screen instructions
     ```
-#### 5. Check the contents that will be included in the published version of the package:
+#### 4. Publish the package:
+##### 4.1. Manual publishing:
+ - Check the contents that will be included in the published version of the package:
     ```bash
     npx npm-packlist
     ```
-#### 6. See what would be done when actually running the command:
+ - See what would be done when actually running the command:
     ```bash
     npm publish --dry-run
     ```
-#### 7. publish the package to npm:
+ - publish the package to npm:
     ```bash
     npm publish --access=public
     ```
     Note: --access=public is needed for scoped package (`@scope/<package-name>`) as it's private by default. If it's not scoped and doesn't have the `private` field set to `true` in `package.json` it will be public as well.
+#### 4.2 Automated publishing:
+    The publishing process is defined via Githib Actions:
+    - ci.yaml - build and tests.
+    - githib.yaml - publish the package to Github repository.
+    - npm.yaml - publish the package to npm repository.
+    The actions runs automatically after each push and pull-request.
 
 ### Usage the commands from the command line during the development:
 
