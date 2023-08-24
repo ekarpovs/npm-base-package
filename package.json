@@ -40,9 +40,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ekarpovs/npm-base-package.git"
+    "url": "git+https://github.com/ekarpovs/npm-packages-repo.git"
   },
-  "author": "TQTech",
+  "author": "ekarpovs",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ekarpovs/npm-base-package/issues"
