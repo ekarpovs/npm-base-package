@@ -87,7 +87,7 @@ A npm base package for starting to make real packages for Node.js projects.
     npm publish --access=public
     ```
     Note: --access=public is needed for scoped package (`@scope/<package-name>`) as it's private by default. If it's not scoped and doesn't have the `private` field set to `true` in `package.json` it will be public as well.
-#### 4.2 Automated publishing:
+##### 4.2 Automated publishing:
     The publishing process is defined via Githib Actions:
     - ci.yaml - build and tests.
     - npm.yaml - publish the package to the npm registry. Not yet implemented
@@ -123,7 +123,7 @@ Prepare:
 ```bash
 npm run prepare
 ```
-Git hooks:
+Git client hooks:
 ```bash
 .husky/pre-commit
 .husky/pre-push
