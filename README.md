@@ -96,7 +96,7 @@ A npm base package for starting to make real packages for Node.js projects.
 ##### 4.2 Automated publishing:
     The publishing process is defined via Githib Actions:
     - ci.yaml - build and tests.
-    - npm.yaml - publish the package to the npm registry. Not yet implemented
+    - npm.yaml - publish the package to the npm registry.
     - githib.yaml - make package link to the Github registry. Not yet implemented.
     The actions runs automatically after each push and pull-request.
 
