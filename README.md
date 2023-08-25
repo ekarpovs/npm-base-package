@@ -47,6 +47,7 @@ A npm base package for starting to make real packages for Node.js projects.
 [rimraf](https://www.npmjs.com/package/rimraf) - a deep deletion module for node.  
 [move-file-cli](https://www.npmjs.com/package/move-file-cli) - a cross-platform alternative to mv for build scripts, etc.  
 [semantic-release](https://www.npmjs.com/package/semantic-release) - automates the whole package release workflow including: determining the next version number, generating the release notes, and publishing the package
+[cz-conventional-changelog"]() - Prompts for conventional changelog standard. After installation - use npm run commit instead of git commit
 
 ### Get started
 #### 1. Create a package project
