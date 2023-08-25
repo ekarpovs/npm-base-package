@@ -40,7 +40,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ekarpovs/npm-base-package.git"
+    "url": "git+https://github.com/ekarpovs/npm-packages-repo.git"
   },
   "author": "ekarpovs",
   "license": "MIT",
