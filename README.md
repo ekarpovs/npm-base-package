@@ -9,6 +9,10 @@ A npm base package for starting to make real packages for Node.js projects.
 
 ### The project file system tree:
 
+├── .github  
+│   ├── workflows
+│   │   ├── ci.yaml  
+│   │   └── npm.yaml  
 ├── .husky  
 │   ├── _  
 │   │   ├── .gitignore  
@@ -22,6 +26,7 @@ A npm base package for starting to make real packages for Node.js projects.
 ├── .eslintrc  
 ├── .gitignore  
 ├── .prettierrc  
+├── .releaserc  
 ├── babel.config.js  
 ├── jest.config.ts  
 ├── LICENSE  
@@ -41,6 +46,7 @@ A npm base package for starting to make real packages for Node.js projects.
 [husky](https://www.npmjs.com/package/husky) - a tool that allows to use Git hooks,  
 [rimraf](https://www.npmjs.com/package/rimraf) - a deep deletion module for node.  
 [move-file-cli](https://www.npmjs.com/package/move-file-cli) - a cross-platform alternative to mv for build scripts, etc.  
+[semantic-release](https://www.npmjs.com/package/semantic-release) - automates the whole package release workflow including: determining the next version number, generating the release notes, and publishing the package
 
 ### Get started
 #### 1. Create a package project
