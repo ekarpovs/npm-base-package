@@ -82,7 +82,7 @@ A npm base package for starting to make real packages for Node.js projects.
 ##### 4.1. Manual publishing:
  - Check the contents that will be included in the published version of the package:
     ```bash
-    npx npm-packlist
+    npx npm-packlist-cli
     ```
  - See what would be done when actually running the command:
     ```bash
