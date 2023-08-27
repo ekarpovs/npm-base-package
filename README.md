@@ -1,16 +1,29 @@
-<div align="center">
-
 ## npm Base Package
 
 A npm base package for starting to make real packages for Node.js projects.
 
-</div>
-
+<p>
+  <a href="https://github.com/ekarpovs/npm-base-package/actions" target="_blank">
+    <img alt="Version" src="https://github.com/oleg-koval/semantic-release-npm-github-publish/workflows/Publish/badge.svg?branch=master">
+  </a>
+  <a href="https://www.npmjs.com/package/ekarpovs/npm-base-package" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/@ekarpovs/npm-base-package.svg">
+  </a>
+  <a href="https://github.com/ekarpovs/npm-base-package#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/ekarpovs/npm-base-package/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/ekarpovs/npm-base-package/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
 
 ### The project file system tree:
 
 ├── .github  
-│   ├── workflows
+│   ├── workflows  
 │   │   ├── ci.yaml  
 │   │   └── npm.yaml  
 ├── .husky  
@@ -26,7 +39,7 @@ A npm base package for starting to make real packages for Node.js projects.
 ├── .eslintrc  
 ├── .gitignore  
 ├── .prettierrc  
-├── .releaserc  
+├── .releaserc.json  
 ├── babel.config.js  
 ├── jest.config.ts  
 ├── LICENSE  
@@ -47,7 +60,7 @@ A npm base package for starting to make real packages for Node.js projects.
 [rimraf](https://www.npmjs.com/package/rimraf) - a deep deletion module for node.  
 [move-file-cli](https://www.npmjs.com/package/move-file-cli) - a cross-platform alternative to mv for build scripts, etc.  
 [semantic-release](https://www.npmjs.com/package/semantic-release) - automates the whole package release workflow including: determining the next version number, generating the release notes, and publishing the package
-[cz-conventional-changelog"]() - Prompts for conventional changelog standard. After installation - use npm run commit instead of git commit
+[cz-conventional-changelog"]() - Prompts for conventional changelog standard.
 
 ### Get started
 #### 1. Create a package project
@@ -99,14 +112,20 @@ A npm base package for starting to make real packages for Node.js projects.
     - ci.yaml - build and tests.
     - npm.yaml - publish the package to the npm registry.
     - githib.yaml - make package link to the Github registry. Not yet implemented.
-    The actions runs automatically after each push and pull-request.
-
+    The actions run automatically after each push and pull-request.
+    Before running the GitHub Actions, set this two environment variables:
+        GITHUB_TOKEN – go to GitHub and select your repository. Then go to Settings/Actions/General. You should find a section called “Workflow permissions.” Ensure that “Read and write permissions” is selected for the GITHUB_TOKEN. We need this to push the newly generated package version to the repository.
+        NPM_TOKEN – in your NPM account, go to the “Access Tokens” page and create a new classic token. The type of the new access token should be “Automation”. Copy the token and go to GitHub. In your repository, navigate to “Settings” and “Secrets”. Add a new repository secret named NPM_TOKEN and paste the access token you created in NPM.
 ### Usage the commands from the command line during the development:
 
 Linting:
 ```bash
 npm run eslint
 npm run eslint:fix
+```
+Commit (use the command instead of git commit for write a conventional message):
+```bash
+npm run commit
 ```
 Testing:
 ```bash
