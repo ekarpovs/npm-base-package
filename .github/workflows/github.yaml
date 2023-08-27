@@ -2,7 +2,7 @@ name: Release Github
 on:
   workflow_run:
     branches: [ main ]
-    workflows: ["CI build"]
+    workflows: ["Release Npm"]
     types:
       - completed
 

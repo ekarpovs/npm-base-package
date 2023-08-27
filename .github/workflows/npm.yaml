@@ -1,9 +1,9 @@
-name: Release
+name: Release Npm
 
 on:
   workflow_run:
     branches: [ main ]
-    workflows: ["Release Github"]
+    workflows: ["CI build"]
     types:
       - completed
 
