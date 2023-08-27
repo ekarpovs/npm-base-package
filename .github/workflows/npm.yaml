@@ -31,5 +31,5 @@ jobs:
       - name: Publish to Github
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-          run: npm publish --dry-run
+        run: npm publish --dry-run
         # run: npm publish --access=public
