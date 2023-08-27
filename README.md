@@ -3,7 +3,7 @@
 A npm base package for starting to make real packages for Node.js projects.
 
 <p>
-  <a href="https://www.npmjs.com/package/ekarpovs/npm-base-package" target="_blank">
+  <a href="https://www.npmjs.com/package/@ekarpovs/npm-base-package" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/@ekarpovs/npm-base-package.svg">
   </a>
   <a href="https://github.com/ekarpovs/npm-base-package#readme" target="_blank">
