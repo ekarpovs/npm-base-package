@@ -21,7 +21,7 @@ A npm base package for starting to make real packages for Node.js projects.
 ### The project file system tree:
 
 ├── .github  
-│   ├── workflows
+│   ├── workflows  
 │   │   ├── ci.yaml  
 │   │   └── npm.yaml  
 ├── .husky  
