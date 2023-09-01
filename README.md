@@ -106,10 +106,10 @@ A npm base package for starting to make real packages for Node.js projects.
     ```
     Note: --access=public is needed for scoped package (`@scope/<package-name>`) as it's private by default. If it's not scoped and doesn't have the `private` field set to `true` in `package.json` it will be public as well.
 ##### 4.2 Automated publishing:
-    The publishing process is defined via Githib Actions:
+    The publishing process is defined via Github Actions:
     - ci.yaml - build and tests.
     - npm.yaml - publish the package to the npm registry.
-    - githib.yaml - make package link to the Github registry.
+    - github.yaml - make package link to the Github registry.
     The actions runs automatically after each push and pull-request.
     Note: Before running the GitHub Actions, set this two environment variables:
         GITHUB_TOKEN – go to GitHub and select your repository. Then go to Settings/Actions/General. You should find a section called “Workflow permissions.” Ensure that “Read and write permissions” is selected for the GITHUB_TOKEN. We need this to push the newly generated package version to the repository.
@@ -130,7 +130,7 @@ Testing:
 ```bash
 npm run test
 ```
-Clean buld output:
+Clean build output:
 ```bash
 npm run clean
 ```
