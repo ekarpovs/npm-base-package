@@ -82,7 +82,18 @@ A npm base package for starting to make real packages for Node.js projects.
     ```
     Note: After the command is executed once, the Git hooks will run automatically before each commit and push.
 
-#### 2. Write the package code and tests.
+#### 2. Write the package code , pack and tests locally:
+  - Packaging:
+  ```bash
+  npm run pack:local
+  ```
+  - Testing:
+  Copy path a ekarpovs-{package-name}-0.0.0-development.tgz
+  Install the package from root directory of a node application project:
+  ```bash
+  npm i ekarpovs-{package-name}-0.0.0-development.tgz
+  ```
+
 #### 3. Prepare to publish the package: 
 ##### 3.1. [Sign up with npm](https://www.npmjs.com/signup).
 ##### 3.2. Sign in with your npm account in the terminal:
