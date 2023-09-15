@@ -130,8 +130,8 @@ A npm base package for starting to make real packages for Node.js projects.
 
 Linting:
 ```bash
-npm run eslint
-npm run eslint:fix
+npm run lint
+npm run lint:fix
 ```
 Commit (use the command instead of git commit for write a conventional message):
 ```bash
