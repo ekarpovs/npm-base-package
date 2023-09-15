@@ -144,6 +144,11 @@ Prepack:
 ```bash
 npm run prepack
 ```
+Pack for local installation:
+```bash
+npm run pack:local
+```
+
 Prepare:
 ```bash
 npm run prepare
